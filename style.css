@@ -1,0 +1,117 @@
+/* ---------------------------------------------------------------
+   style.css
+
+   Deliberately plain. It is not supposed to look good yet — that
+   part is your job. Everything here is meant to be changed.
+
+   Try this first: change --ink and --paper below, save, and watch
+   the whole page shift. Those are CSS custom properties, and this
+   is roughly how design systems work.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper: #fbfaf7;
+  --ink: #1c1a17;
+  --muted: #6b665e;
+  --rule: #ddd8cf;
+  --accent: #7a3b2e;
+
+  --measure: 34rem;  /* line length — the single most underrated
+                        typographic decision on the web */
+}
+
+/* Respect the reader's dark mode instead of blinding them at 1am. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #161513;
+    --ink: #eae6de;
+    --muted: #9a948a;
+    --rule: #34312c;
+    --accent: #d99177;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+  max-width: var(--measure);
+
+  background: var(--paper);
+  color: var(--ink);
+
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+section {
+  margin-bottom: 2.75rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.project {
+  padding-left: 1rem;
+  border-left: 2px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.875rem;
+}

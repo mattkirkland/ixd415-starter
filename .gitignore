@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------
+# .gitignore — files git should pretend don't exist.
+#
+# Anything matching a line below stays on your computer and never
+# gets committed or pushed. This is how a repo stays clean.
+# ---------------------------------------------------------------
+
+# --- Junk your operating system creates without asking ---
+# macOS leaves one of these in every folder you open in Finder.
+.DS_Store
+.AppleDouble
+._*
+
+# Windows does the same thing with these.
+Thumbs.db
+Desktop.ini
+
+# --- Editor and tool leftovers ---
+.idea/
+*.swp
+*.swo
+
+# NOTE: .vscode/ is deliberately NOT ignored in this repo.
+# We're sharing editor settings on purpose so everyone's VS Code
+# behaves the same way. That's unusual — most projects ignore it.
+
+# --- Big binaries: keep these OUT of git ---
+# Git stores a full copy of every version of every file forever.
+# That's great for text and terrible for a 400MB layered PSD.
+# Export a flattened PNG/JPG/SVG and commit that instead.
+*.psd
+*.ai
+*.sketch
+*.fig
+*.indd
+*.mp4
+*.mov
+*.zip
+
+# --- Dependencies and build output ---
+# These get regenerated from other files, so committing them
+# just makes the repo huge and creates pointless merge conflicts.
+node_modules/
+dist/
+build/
+.cache/
+
+# --- Secrets ---
+# Never commit passwords, API keys, or tokens. Once something is
+# pushed to a public repo, assume the whole internet has it.
+.env
+.env.local
+*.pem

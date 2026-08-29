@@ -1,0 +1,21 @@
+{
+  // VS Code will offer to install these the first time you open
+  // this folder. Say yes. It takes about thirty seconds.
+  "recommendations": [
+    // Live Preview — see your HTML update in a panel as you save,
+    // without setting up a server or dragging files into a browser.
+    "ms-vscode.live-server",
+
+    // Prettier — reformats your HTML/CSS/JS into a consistent shape.
+    // Mostly here so nobody's diff is 200 lines of indentation.
+    "esbenp.prettier-vscode",
+
+    // Error Lens — shows mistakes inline instead of in a panel
+    // you'd have to remember to look at.
+    "usernamehw.errorlens",
+
+    // indent-rainbow — colors indentation levels. Sounds trivial;
+    // makes nested HTML dramatically easier to read.
+    "oderwat.indent-rainbow"
+  ]
+}

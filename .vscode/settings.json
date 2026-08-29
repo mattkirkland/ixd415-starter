@@ -1,0 +1,37 @@
+{
+  // Shared VS Code settings for IXD 415.
+  // These apply only inside this folder, not to your other projects.
+  // When you open this folder, everyone's editor behaves identically —
+  // which means the projector matches your screen.
+
+  // --- Windows students: make the built-in terminal use Git Bash ---
+  // Without this, Windows opens PowerShell, where half the commands
+  // we use in class don't exist. Requires Git for Windows installed.
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // --- Readable on a projector and on your own screen ---
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "editor.lineHeight": 1.6,
+
+  // --- Consistent formatting so diffs show real changes ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  // --- Fewer distractions while you're learning the shape of things ---
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.wordWrap": "on",
+
+  // --- AI autocomplete off for now ---
+  // We'll use AI deliberately in this course, not as ghost text that
+  // finishes your sentence before you know what you meant to say.
+  // Turn this back on whenever you like — it's your editor.
+  "github.copilot.enable": {
+    "*": false
+  },
+  "editor.inlineSuggest.enabled": false
+}

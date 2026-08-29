@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------
+# .gitattributes — settles the Mac vs Windows line-ending fight.
+#
+# Macs end each line of a text file with one invisible character.
+# Windows uses two. Without this file, a Windows student opening a
+# Mac student's file and saving it produces a diff where EVERY line
+# looks changed, even though nothing actually changed.
+#
+# This tells git: normalize everything to one style when storing.
+# You will never think about it again. That's the point.
+# ---------------------------------------------------------------
+
+* text=auto eol=lf
+
+# Binary files must not be touched — normalizing them corrupts them.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
