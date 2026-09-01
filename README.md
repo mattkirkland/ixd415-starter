@@ -25,7 +25,7 @@ Go to [github.com](https://github.com) and sign up.
 
 **Pick your username carefully.** It becomes a URL that people will see, eg `github.com/yourname`, and you might include it on a resume.
 
-Use your KU email and you can also claim the
+IF you choose to use your KU email and you can also claim the
 [Student Developer Pack](https://education.github.com/pack), which is
 free and includes a domain name for a year.
 
