@@ -129,7 +129,7 @@ directory". It's how you walk around your own computer by typing.
 Now clone the starter (your instructor will give you the URL):
 
 ```bash
-git clone <REPO-URL-GOES-HERE>
+git clone https://github.com/mattkirkland/ixd415-starter.git
 cd ixd415-starter
 code .
 ```
