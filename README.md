@@ -126,7 +126,7 @@ cd ixd415
 You just made a folder and moved into it. `cd` means "change
 directory". It's how you walk around your own computer by typing.
 
-Now clone the starter (your instructor will give you the URL):
+Now clone the starter:
 
 ```bash
 git clone https://github.com/mattkirkland/ixd415-starter.git
